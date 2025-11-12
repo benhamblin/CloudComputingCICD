@@ -5,7 +5,7 @@ on:
     branches:
       - main
   workflow_dispatch:
-  
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,7 +24,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         python -m pytest tests
-     	
 
     - name: Authenticate to Google Cloud
       uses: google-github-actions/auth@v2
